@@ -14,16 +14,26 @@ Plugin 'altercation/vim-colors-solarized.git'
 " Commenting on gc
 Plugin 'tpope/vim-commentary.git'
 
+" Haml, Sass, SCSS
+Plugin 'tpope/vim-haml.git'
+
+" Cofeescript
+Plugin 'kchmck/vim-coffee-script'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 filetype plugin on
 
-" tab = 2 spaces
+" tab = spaces
 set expandtab
 set tabstop=2
-set shiftwidth=2
 set softtabstop=2
+
+" Same for shifting
+set shiftwidth=2
+
+" Show line numbers
 set number
 
 " Searching
@@ -40,8 +50,12 @@ set autochdir
 set cursorline
 set colorcolumn=80
 
+" Show lines above and below the cursor line
+set scrolloff=7
+
 " Syntax & colours
 syntax enable
+set t_Co=256
 set background=dark
 colorscheme solarized
 
