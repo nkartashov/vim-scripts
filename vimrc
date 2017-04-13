@@ -9,16 +9,23 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized'
 
 " Commenting on gc
-Plugin 'tpope/vim-commentary.git'
+Plugin 'tpope/vim-commentary'
 
 " Haml, Sass, SCSS
-Plugin 'tpope/vim-haml.git'
+Plugin 'tpope/vim-haml'
 
 " Cofeescript
 Plugin 'kchmck/vim-coffee-script'
+
+" Airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Git wrapping
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,3 +94,10 @@ vnoremap <F1> <ESC>
 " Automatically delete trailing DOS-returns and whitespace on file open and
 " write.
 autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre <buffer> %s/[\r \t]\+$//
+
+" Plugins
+
+" Show Airline
+set laststatus=2
+" Display Airline tabline
+let g:airline#extensions#tabline#enabled = 1
