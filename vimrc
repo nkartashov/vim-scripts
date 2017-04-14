@@ -20,12 +20,15 @@ Plugin 'tpope/vim-haml'
 " Cofeescript
 Plugin 'kchmck/vim-coffee-script'
 
-" Airline
+" Airline bottom line & tab line
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Git wrapping
 Plugin 'tpope/vim-fugitive'
+
+" Syntax checking
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -101,3 +104,18 @@ autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre
 set laststatus=2
 " Display Airline tabline
 let g:airline#extensions#tabline#enabled = 1
+
+
+" Syntastic default
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Syntastic checkers
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_ruby_checkers = ['rubocop']
