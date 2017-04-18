@@ -9,13 +9,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'altercation/vim-colors-solarized'
 
 " Commenting on gc
-Plugin 'tpope/vim-commentary.git'
+Plugin 'tpope/vim-commentary'
 
 " Haml, Sass, SCSS
-Plugin 'tpope/vim-haml.git'
+Plugin 'tpope/vim-haml'
 
 " Cofeescript
 Plugin 'kchmck/vim-coffee-script'
@@ -23,6 +23,28 @@ Plugin 'kchmck/vim-coffee-script'
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
+
+" Airline bottom line & tab line
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Git wrapping
+Plugin 'tpope/vim-fugitive'
+
+" Async commands for completion plugins
+Plugin 'Shougo/vimproc.vim'
+
+" " Syntax checking
+" Plugin 'vim-syntastic/syntastic'
+
+" Completion
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete.vim'
+
+" Haskell support
+Plugin 'eagletmt/neco-ghc'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'itchyny/vim-haskell-indent'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,3 +116,31 @@ vnoremap <F1> <ESC>
 "
 " Automatically delete whitespace character at the end of the string
 autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre <buffer> %s/[\r \t]\+$//
+
+" Plugins
+
+" Show Airline
+set laststatus=2
+" Display Airline tabline
+let g:airline#extensions#tabline#enabled = 1
+
+
+" Syntastic default
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
+" " Syntastic checkers
+" let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_ruby_checkers = ['rubocop']
+
+" Enable neocomplete
+let g:neocomplete#enable_at_startup = 1
+
+" Get type of the Haskell expression by ctrl-]
+autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>
