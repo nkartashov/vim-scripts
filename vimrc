@@ -20,6 +20,10 @@ Plugin 'tpope/vim-haml.git'
 " Cofeescript
 Plugin 'kchmck/vim-coffee-script'
 
+" Ruby
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -73,6 +77,10 @@ set noswapfile
 " Don't wrap lines
 set nowrap
 
+" Suggest files for tab new completion
+set wildmode=longest,list,full
+set wildmenu
+
 " Make searches magical
 nnoremap / /\v
 vnoremap / /\v
@@ -83,7 +91,6 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 " Autocommands
-
-" Automatically delete trailing DOS-returns and whitespace on file open and
-" write.
+"
+" Automatically delete whitespace character at the end of the string
 autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre <buffer> %s/[\r \t]\+$//
