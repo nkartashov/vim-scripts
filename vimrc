@@ -14,6 +14,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Commenting on gc
 Plugin 'tpope/vim-commentary'
 
+" Display marks near line numbers 
+Plugin 'kshenoy/vim-signature'
+
 " Haml, Sass, SCSS
 Plugin 'tpope/vim-haml'
 
@@ -28,14 +31,17 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-" Git wrapping
+" Git branches in Airline
 Plugin 'tpope/vim-fugitive'
+
+" Added/deleted lines near line numbers
+Plugin 'airblade/vim-gitgutter'
 
 " Async commands for completion plugins
 Plugin 'Shougo/vimproc.vim'
 
 " " Syntax checking
-" Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
 " Completion
 " Plugin 'Valloric/YouCompleteMe'
