@@ -96,8 +96,8 @@ set background=dark
 colorscheme solarized
 
 " Move from tab to tab on F3/F4
-nnoremap <F3> gT
-nnoremap <F4> gt
+nnoremap <A-Right> gt
+nnoremap <A-Left> gT
 
 " Fix backspace in insert mode
 set backspace=indent,eol,start
