@@ -40,12 +40,16 @@ Plugin 'airblade/vim-gitgutter'
 " Async commands for completion plugins
 Plugin 'Shougo/vimproc.vim'
 
-" " Syntax checking
+" Syntax checking
 Plugin 'vim-syntastic/syntastic'
 
 " Completion
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/neocomplete.vim'
+
+" Fast opening files
+" Plugin 'wincent/Command-T'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Haskell support
 Plugin 'eagletmt/neco-ghc'
@@ -150,3 +154,18 @@ let g:neocomplete#enable_at_startup = 1
 
 " Get type of the Haskell expression by ctrl-]
 autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>
+
+" Ctrl-P
+if executable('ag')
+  " Use Ag over Grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+" Always open new files in a new tab using CtrlP
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
