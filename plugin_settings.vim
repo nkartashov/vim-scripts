@@ -4,6 +4,9 @@
 set laststatus=2
 " Display Airline tabline
 let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#show_tab_type = 0
+" Set theme to Solarized
+let g:airline_theme='solarized'
 
 
 " Syntastic default
