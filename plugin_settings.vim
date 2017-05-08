@@ -4,7 +4,11 @@
 set laststatus=2
 " Display Airline tabline
 let g:airline#extensions#tabline#enabled = 1
-  let g:airline#extensions#tabline#show_tab_type = 0
+" Don't waste space for files on the right
+let g:airline#extensions#tabline#show_tab_type = 0
+" Don't waste space for numbers
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
 " Set theme to Solarized
 let g:airline_theme='solarized'
 
