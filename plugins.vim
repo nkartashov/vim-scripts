@@ -32,11 +32,22 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Tagbar & tags for class view
+Plugin 'majutsushi/tagbar'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-easytags'
+
+" Tags for CoffeeScript
+Plugin 'lukaszkorecki/CoffeeTags'
+
 " Git branches in Airline
 Plugin 'tpope/vim-fugitive'
 
 " Added/deleted lines near line numbers
 Plugin 'airblade/vim-gitgutter'
+
+" Fancy start page
+Plugin 'mhinz/vim-startify'
 
 " Async commands for completion plugins
 Plugin 'Shougo/vimproc.vim'

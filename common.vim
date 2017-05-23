@@ -80,6 +80,12 @@ fun! TrimWhitespace()
 endfun
 command! TrimWhitespace call TrimWhitespace()
 
+" Paste like normal people (without replacing the pasted text with deleted)
+xnoremap p "_dP
+
+" Delete the same way
+nnoremap d "_d
+
 " Autocommands
 " Automatically delete whitespace character at the end of the string
 autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre <buffer> :call TrimWhitespace()

@@ -49,3 +49,9 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 let g:ctrlp_root_markers = ['manage.py']
+
+" Open tagbar on F2
+nmap <F2> :TagbarToggle<CR>
+
+" Easytags
+let g:easytags_async = 1
