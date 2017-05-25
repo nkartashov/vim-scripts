@@ -22,7 +22,9 @@ set smartcase
 set hlsearch
 
 " Change dir to the current file dir
-set autochdir
+" set autochdir
+" Same as autochdir but works better with plugins
+autocmd BufEnter * silent! lcd %:p:h
 
 " Highlight a line with cursor and 80th column
 set cursorline
