@@ -50,6 +50,9 @@ let g:ctrlp_prompt_mappings = {
 
 let g:ctrlp_root_markers = ['manage.py']
 
+" Support scrolling in ctrlP window
+let g:ctrlp_match_window = 'results:100'
+
 " Open tagbar on F2
 nmap <F2> :TagbarToggle<CR>
 
