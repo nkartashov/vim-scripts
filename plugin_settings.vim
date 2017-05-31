@@ -11,7 +11,8 @@ let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#show_tab_nr = 0
 " Set theme to Solarized
 let g:airline_theme='solarized'
-
+" Just show the filename (no path) in the tab
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Syntastic default
 set statusline+=%#warningmsg#
