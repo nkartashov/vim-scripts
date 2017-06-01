@@ -59,3 +59,6 @@ nmap <F2> :TagbarToggle<CR>
 
 " Easytags
 let g:easytags_async = 1
+
+" Run vim-gitgutter asynchronously
+let g:gitgutter_async = 1
