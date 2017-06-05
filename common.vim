@@ -26,9 +26,9 @@ set hlsearch
 " Same as autochdir but works better with plugins
 autocmd BufEnter * silent! lcd %:p:h
 
-" Highlight a line with cursor and 80th column
+" Highlight a line with cursor and 80th, 120th columns
 set cursorline
-set colorcolumn=80
+set colorcolumn=80,120
 
 " Show lines above and below the cursor line
 set scrolloff=7
