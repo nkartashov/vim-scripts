@@ -90,4 +90,4 @@ nnoremap d "_d
 
 " Autocommands
 " Automatically delete whitespace character at the end of the string
-autocmd FileType c,cpp,java,js,hs,py,rb autocmd BufRead,BufWritePre,FileWritePre <buffer> :call TrimWhitespace()
+autocmd FileType c,cpp,java,js,hs,py,rb,coffee autocmd BufRead,BufWritePre,FileWritePre <buffer> :call TrimWhitespace()
