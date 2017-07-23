@@ -27,7 +27,8 @@ set hlsearch
 autocmd BufEnter * silent! lcd %:p:h
 
 " Highlight a line with cursor and 80th, 120th columns
-set cursorline
+" set cursorline
+" set lazyredraw
 set colorcolumn=80,120
 
 " Show lines above and below the cursor line
