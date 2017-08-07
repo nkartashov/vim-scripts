@@ -62,6 +62,8 @@ Plugin 'Shougo/neocomplete.vim'
 " Fast opening files
 " Plugin 'wincent/Command-T'
 Plugin 'ctrlpvim/ctrlp.vim'
+" Fast path matching with Ctrl-P
+Plugin 'nixprime/cpsm'
 
 " Haskell support
 Plugin 'eagletmt/neco-ghc'
