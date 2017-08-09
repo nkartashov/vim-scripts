@@ -63,7 +63,9 @@ Plugin 'Shougo/neocomplete.vim'
 " Plugin 'wincent/Command-T'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
-Plugin 'nixprime/cpsm'
+" Plugin 'nixprime/cpsm'
+" Plugin 'JazzCore/ctrlp-cmatcher'
+Plugin 'FelikZ/ctrlp-py-matcher'
 
 " Haskell support
 Plugin 'eagletmt/neco-ghc'
