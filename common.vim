@@ -3,16 +3,17 @@
 set novisualbell
 set noerrorbells
 
-" tabs = spaces
-set expandtab
-set tabstop=2
-set softtabstop=2
+set expandtab " tabs = spaces
+set tabstop=2 " number of visual spaces per tab
+set softtabstop=2 " number of spaces in tab when editing
 
 " Same for shifting
 set shiftwidth=2
 
 " Show line numbers
 set number
+" Show last command
+set showcmd
 
 " Searching
 set showmatch
