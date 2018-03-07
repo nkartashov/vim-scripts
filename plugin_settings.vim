@@ -67,3 +67,11 @@ let g:easytags_async = 1
 
 " Run vim-gitgutter asynchronously
 let g:gitgutter_async = 1
+
+" Ack.vim
+" Use Ag instead of ack
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack

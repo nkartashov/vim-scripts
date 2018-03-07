@@ -67,6 +67,9 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'FelikZ/ctrlp-py-matcher'
 
+" Searching with Ag
+Plugin 'mileszs/ack.vim'
+
 " Haskell support
 Plugin 'eagletmt/neco-ghc'
 Plugin 'eagletmt/ghcmod-vim'

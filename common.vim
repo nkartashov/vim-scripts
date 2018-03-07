@@ -1,34 +1,37 @@
 " Common settings
 " Disable bell
-set visualbell
+set novisualbell
 set noerrorbells
 
-" tabs = spaces
-set expandtab
-set tabstop=2
-set softtabstop=2
+set expandtab " tabs = spaces
+set tabstop=2 " number of visual spaces per tab
+set softtabstop=2 " number of spaces in tab when editing
 
 " Same for shifting
 set shiftwidth=2
 
 " Show line numbers
 set number
+" Show last command
+set showcmd
 
 " Searching
 set showmatch
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
+set incsearch " Highlight search matches when typing
+set hlsearch " Highlight found search results
+set ignorecase " Ignore case when searching
+set smartcase " Until you type in camelCase
 
 " Change dir to the current file dir
 " set autochdir
 " Same as autochdir but works better with plugins
 autocmd BufEnter * silent! lcd %:p:h
 
-" Highlight a line with cursor and 80th, 120th columns
+" Highlight current line
+" disabled for performance
 " set cursorline
 " set lazyredraw
+" Highlight a line with cursor and 80th, 120th columns
 set colorcolumn=80,120
 
 " Show lines above and below the cursor line
