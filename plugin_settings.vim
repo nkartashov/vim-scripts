@@ -15,9 +15,17 @@ let g:airline_theme='solarized'
 let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Syntastic default
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_python_python_exec = 'python3'
+" let g:syntastic_python_checkers = []
+" let g:ale_linters = {
+"       \ 'python': ['flake8'],
+"       \ }
+" let g:ale_python_flake8_options='--ignore=E225,E402,E501'
+" let g:ale_completion_enabled = 1
 
 " let g:syntastic_always_populate_loc_list = 1
 " let g:syntastic_auto_loc_list = 1
@@ -27,9 +35,11 @@ set statusline+=%*
 " " Syntastic checkers
 " let g:syntastic_javascript_checkers = ['jshint']
 " let g:syntastic_ruby_checkers = ['rubocop']
+"
+call neomake#configure#automake('nw', 750)
 
 " Enable neocomplete
-let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_at_startup = 1
 
 " Get type of the Haskell expression by ctrl-]
 autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>

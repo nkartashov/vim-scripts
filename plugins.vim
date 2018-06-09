@@ -53,11 +53,15 @@ Plugin 'mhinz/vim-startify'
 Plugin 'Shougo/vimproc.vim'
 
 " Syntax checking
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
+" Plugin 'w0rp/ale'
+" Plugin 'maralla/validator.vim'
+Plugin 'neomake/neomake'
 
 " Completion
 " Plugin 'Valloric/YouCompleteMe'
-Plugin 'Shougo/neocomplete.vim'
+" Plugin 'Shougo/neocomplete.vim'
+Plugin 'maralla/completor.vim'
 
 " Fast opening files
 " Plugin 'wincent/Command-T'
