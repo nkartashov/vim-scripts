@@ -88,6 +88,15 @@ fun! TrimWhitespace()
 endfun
 command! TrimWhitespace call TrimWhitespace()
 
+" Copy to os clipboard
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
+
 " Paste like normal people (without replacing the pasted text with deleted)
 xnoremap p "_dP
 
