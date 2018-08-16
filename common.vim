@@ -12,6 +12,8 @@ set shiftwidth=2
 
 " Show line numbers
 set number
+" Don't select line numbers while selecting with mouse
+set mouse=a
 " Show last command
 set showcmd
 
