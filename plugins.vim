@@ -67,8 +67,6 @@ Plugin 'maralla/completor.vim'
 " Plugin 'wincent/Command-T'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
-" Plugin 'nixprime/cpsm'
-" Plugin 'JazzCore/ctrlp-cmatcher'
 Plugin 'FelikZ/ctrlp-py-matcher'
 
 " Searching with Ag
@@ -78,6 +76,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'itchyny/vim-haskell-indent'
+
+" Js highlighting
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
