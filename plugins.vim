@@ -77,7 +77,7 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'itchyny/vim-haskell-indent'
 
-" Js highlighting
+" Js
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
