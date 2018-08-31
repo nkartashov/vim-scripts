@@ -41,6 +41,9 @@ call neomake#configure#automake('nw', 750)
 " Enable neocomplete
 " let g:neocomplete#enable_at_startup = 1
 
+" Better python completion via jedi
+let g:completor_python_binary = '/Users/nikita.kartashov/envs/py3.6/bin/python'
+
 " Get type of the Haskell expression by ctrl-]
 autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>
 
@@ -74,7 +77,8 @@ nmap <F2> :TagbarToggle<CR>
 
 " Easytags
 let g:easytags_async = 1
-let g:easytags_opts = ['-R', '--python-kinds=-iv'] " ignore import statements and variables
+let g:easytags_always_enabled = 1
+" let g:easytags_opts = ['-R', '--python-kinds=-i'] " ignore import statements and variables
 
 " Run vim-gitgutter asynchronously
 let g:gitgutter_async = 1
