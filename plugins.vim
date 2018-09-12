@@ -68,6 +68,7 @@ Plugin 'maralla/completor.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
 Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'nixprime/cpsm'
 
 " Searching with Ag
 Plugin 'mileszs/ack.vim'
