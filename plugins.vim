@@ -34,8 +34,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Tagbar & tags for class view
 Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-misc'
+" Plugin 'xolox/vim-easytags'
 
 " Tags for CoffeeScript
 Plugin 'lukaszkorecki/CoffeeTags'
@@ -67,8 +67,8 @@ Plugin 'maralla/completor.vim'
 " Plugin 'wincent/Command-T'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
-Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'nixprime/cpsm'
+Plugin 'FelikZ/ctrlp-py-matcher'
 
 " Searching with Ag
 Plugin 'mileszs/ack.vim'
