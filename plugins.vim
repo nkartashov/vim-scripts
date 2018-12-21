@@ -15,6 +15,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Commenting on gc
 Plugin 'tpope/vim-commentary'
 
+" Change surrounding characters
+Plugin 'tpope/vim-surround'
+
 " Display marks near line numbers 
 Plugin 'kshenoy/vim-signature'
 
