@@ -15,6 +15,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Commenting on gc
 Plugin 'tpope/vim-commentary'
 
+" Change surrounding characters
+Plugin 'tpope/vim-surround'
+
 " Display marks near line numbers 
 Plugin 'kshenoy/vim-signature'
 
@@ -67,8 +70,8 @@ Plugin 'maralla/completor.vim'
 " Plugin 'wincent/Command-T'
 Plugin 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
-Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'nixprime/cpsm'
+Plugin 'FelikZ/ctrlp-py-matcher'
 
 " Searching with Ag
 Plugin 'mileszs/ack.vim'
@@ -85,6 +88,9 @@ Plugin 'posva/vim-vue'
 
 " GraphQL
 Plugin 'jparise/vim-graphql'
+
+" Highlighting for nginx
+Plugin 'chr4/nginx.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

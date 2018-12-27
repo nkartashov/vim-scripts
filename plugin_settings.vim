@@ -69,7 +69,6 @@ let g:ctrlp_match_window = 'results:100'
 
 " Faster searching for paths
 let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
-" let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 " let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " Open tagbar on F2
