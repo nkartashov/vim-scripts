@@ -34,8 +34,8 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Tagbar & tags for class view
 Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-misc'
+" Plugin 'xolox/vim-easytags'
 
 " Tags for CoffeeScript
 Plugin 'lukaszkorecki/CoffeeTags'
