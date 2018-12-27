@@ -81,6 +81,7 @@ Plugin 'itchyny/vim-haskell-indent'
 " Js
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
 
 " GraphQL
 Plugin 'jparise/vim-graphql'
