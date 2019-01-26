@@ -74,6 +74,11 @@ let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
 " Open tagbar on F2
 nmap <F2> :TagbarToggle<CR>
 
+" Easytags
+" let g:easytags_async = 1
+" let g:easytags_always_enabled = 1
+" let g:easytags_opts = ['-R', '--python-kinds=-i'] " ignore import statements and variables
+
 " Run vim-gitgutter asynchronously
 let g:gitgutter_async = 1
 
