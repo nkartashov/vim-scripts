@@ -6,6 +6,7 @@ set noerrorbells
 set expandtab " tabs = spaces
 set tabstop=2 " number of visual spaces per tab
 set softtabstop=2 " number of spaces in tab when editing
+set smartindent " smart indentation
 
 " Same for shifting
 set shiftwidth=2
