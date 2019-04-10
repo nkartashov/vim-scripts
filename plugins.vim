@@ -18,6 +18,9 @@ Plugin 'tpope/vim-commentary'
 " Change surrounding characters
 Plugin 'tpope/vim-surround'
 
+" Better % movement
+Plugin 'andymass/vim-matchup'
+
 " Display marks near line numbers 
 Plugin 'kshenoy/vim-signature'
 
