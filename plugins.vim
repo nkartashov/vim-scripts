@@ -2,97 +2,100 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" " set the runtime path to include Vundle and initialize
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " Solarized
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 " Commenting on gc
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 " Change surrounding characters
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Display marks near line numbers 
-Plugin 'kshenoy/vim-signature'
+Plug 'kshenoy/vim-signature'
 
 " Haml, Sass, SCSS
-Plugin 'tpope/vim-haml'
+Plug 'tpope/vim-haml'
 
 " Cofeescript
-Plugin 'kchmck/vim-coffee-script'
+Plug 'kchmck/vim-coffee-script'
 
 " Ruby
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
 
 " Airline bottom line & tab line
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Tagbar & tags for class view
-Plugin 'majutsushi/tagbar'
-" Plugin 'xolox/vim-misc'
-" Plugin 'xolox/vim-easytags'
+Plug 'majutsushi/tagbar'
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-easytags'
 
 " Tags for CoffeeScript
-Plugin 'lukaszkorecki/CoffeeTags'
+Plug 'lukaszkorecki/CoffeeTags'
 
 " Git branches in Airline
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Added/deleted lines near line numbers
-Plugin 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 " Fancy start page
-Plugin 'mhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 
 " Async commands for completion plugins
-Plugin 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim'
 
 " Syntax checking
-" Plugin 'vim-syntastic/syntastic'
-" Plugin 'w0rp/ale'
-" Plugin 'maralla/validator.vim'
-Plugin 'neomake/neomake'
+" Plug 'vim-syntastic/syntastic'
+" Plug 'w0rp/ale'
+" Plug 'maralla/validator.vim'
+Plug 'neomake/neomake'
 
 " Completion
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'Shougo/neocomplete.vim'
-Plugin 'maralla/completor.vim'
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'Shougo/neocomplete.vim'
+Plug 'maralla/completor.vim'
 
 " Fast opening files
-" Plugin 'wincent/Command-T'
-Plugin 'ctrlpvim/ctrlp.vim'
+" Plug 'wincent/Command-T'
+Plug 'ctrlpvim/ctrlp.vim'
 " Fast path matching with Ctrl-P
-Plugin 'nixprime/cpsm'
-Plugin 'FelikZ/ctrlp-py-matcher'
+Plug 'nixprime/cpsm'
+Plug 'FelikZ/ctrlp-py-matcher'
 
 " Searching with Ag
-Plugin 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim'
 
 " Haskell support
-Plugin 'eagletmt/neco-ghc'
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'itchyny/vim-haskell-indent'
+Plug 'eagletmt/neco-ghc'
+Plug 'eagletmt/ghcmod-vim'
+Plug 'itchyny/vim-haskell-indent'
 
 " Js
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'posva/vim-vue'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
 
 " GraphQL
-Plugin 'jparise/vim-graphql'
+Plug 'jparise/vim-graphql'
 
 " Highlighting for nginx
-Plugin 'chr4/nginx.vim'
+Plug 'chr4/nginx.vim'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-filetype plugin on
+" call vundle#end()            " required
+" Initialize Plug system
+call plug#end()
+" filetype plugin indent on    " required
+" filetype plugin on
