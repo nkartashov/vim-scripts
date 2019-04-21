@@ -53,8 +53,14 @@ if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     " Mac has rebound keys for word movements for iterm, so work around that
-    nnoremap <Esc>f gt
-    nnoremap <ESC>b gT
+    if has('nvim')
+      " Neovim decided to use A- for Alt :sigh:
+      nnoremap <A-f> gt
+      nnoremap <A-b> gT
+    else
+      nnoremap <Esc>f gt
+      nnoremap <ESC>b gT
+    endif
   endif
 endif
 
