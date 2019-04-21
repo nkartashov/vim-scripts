@@ -19,6 +19,9 @@ Plug 'tpope/vim-commentary'
 " Change surrounding characters
 Plug 'tpope/vim-surround'
 
+" Better % movement
+Plugin 'andymass/vim-matchup'
+
 " Display marks near line numbers 
 Plug 'kshenoy/vim-signature'
 
@@ -92,6 +95,12 @@ Plug 'jparise/vim-graphql'
 
 " Highlighting for nginx
 Plug 'chr4/nginx.vim'
+
+" Highlighting for Snakemake
+Plugin 'ibab/vim-snakemake'
+
+" Highlighting for Jinja
+Bundle "lepture/vim-jinja"
 
 " All of your Plugins must be added before the following line
 " call vundle#end()            " required
