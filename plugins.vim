@@ -1,14 +1,6 @@
-" List of Vundle + plugins
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-" " set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
 call plug#begin('~/.vim/plugged')
-
-" let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
 
 " Solarized
 Plug 'altercation/vim-colors-solarized'
@@ -98,9 +90,5 @@ Plug 'ibab/vim-snakemake'
 " Highlighting for Jinja
 Plug 'lepture/vim-jinja'
 
-" All of your Plugins must be added before the following line
-" call vundle#end()            " required
 " Initialize Plug system
 call plug#end()
-" filetype plugin indent on    " required
-" filetype plugin on
