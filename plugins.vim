@@ -71,11 +71,7 @@ Plug 'neomake/neomake'
 Plug 'maralla/completor.vim'
 
 " Fast opening files
-" Plug 'wincent/Command-T'
 Plug 'ctrlpvim/ctrlp.vim'
-" Fast path matching with Ctrl-P
-Plug 'nixprime/cpsm'
-Plug 'FelikZ/ctrlp-py-matcher'
 
 " Searching with Ag
 Plug 'mileszs/ack.vim'

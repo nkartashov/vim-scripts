@@ -67,10 +67,6 @@ let g:ctrlp_root_markers = ['manage.py']
 " Support scrolling in ctrlP window
 let g:ctrlp_match_window = 'results:100'
 
-" Faster searching for paths
-let g:ctrlp_match_func = {'match': 'cpsm#CtrlPMatch'}
-" let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-
 " Open tagbar on F2
 nmap <F2> :TagbarToggle<CR>
 
