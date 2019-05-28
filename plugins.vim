@@ -17,8 +17,31 @@ Plug 'andymass/vim-matchup'
 " Display marks near line numbers 
 Plug 'kshenoy/vim-signature'
 
+" Languages
 " Haml, Sass, SCSS
 Plug 'tpope/vim-haml'
+
+" Haskell support
+Plug 'eagletmt/neco-ghc'
+Plug 'eagletmt/ghcmod-vim'
+Plug 'itchyny/vim-haskell-indent'
+
+" Js
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'posva/vim-vue'
+
+" GraphQL
+Plug 'jparise/vim-graphql'
+
+" Highlighting for nginx
+Plug 'chr4/nginx.vim'
+
+" Highlighting for Snakemake
+Plug 'ibab/vim-snakemake'
+
+" Highlighting for Jinja
+Plug 'lepture/vim-jinja'
 
 " Cofeescript
 Plug 'kchmck/vim-coffee-script'
@@ -59,28 +82,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 " Searching with Ag
 Plug 'mileszs/ack.vim'
-
-" Haskell support
-Plug 'eagletmt/neco-ghc'
-Plug 'eagletmt/ghcmod-vim'
-Plug 'itchyny/vim-haskell-indent'
-
-" Js
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'posva/vim-vue'
-
-" GraphQL
-Plug 'jparise/vim-graphql'
-
-" Highlighting for nginx
-Plug 'chr4/nginx.vim'
-
-" Highlighting for Snakemake
-Plug 'ibab/vim-snakemake'
-
-" Highlighting for Jinja
-Plug 'lepture/vim-jinja'
 
 " Initialize Plug system
 call plug#end()
