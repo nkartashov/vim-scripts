@@ -1,5 +1,7 @@
 " Plugin settings
 
+let g:python3_host_prog = '/Users/nkartashov/envs/python37-nvim/bin/python3'
+
 " Show Airline
 set laststatus=2
 " Display Airline tabline
@@ -14,35 +16,10 @@ let g:airline_theme='solarized'
 " Just show the filename (no path) in the tab
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-" Syntastic default
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
-" let g:syntastic_python_python_exec = 'python3'
-" let g:syntastic_python_checkers = []
-" let g:ale_linters = {
-"       \ 'python': ['flake8'],
-"       \ }
-" let g:ale_python_flake8_options='--ignore=E225,E402,E501'
-" let g:ale_completion_enabled = 1
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-" " Syntastic checkers
-" let g:syntastic_javascript_checkers = ['jshint']
-" let g:syntastic_ruby_checkers = ['rubocop']
-"
 call neomake#configure#automake('nw', 750)
-
-" Enable neocomplete
-" let g:neocomplete#enable_at_startup = 1
-
-" Better python completion via jedi
-let g:completor_python_binary = '/Users/nikita.kartashov/envs/py3.6/bin/python'
 
 " Get type of the Haskell expression by ctrl-]
 autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>
@@ -62,6 +39,7 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
+" Don't search above directories with this filename
 let g:ctrlp_root_markers = ['manage.py']
 
 " Support scrolling in ctrlP window

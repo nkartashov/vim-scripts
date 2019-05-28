@@ -67,15 +67,10 @@ Plug 'mhinz/vim-startify'
 Plug 'Shougo/vimproc.vim'
 
 " Syntax checking
-" Plug 'vim-syntastic/syntastic'
-" Plug 'w0rp/ale'
-" Plug 'maralla/validator.vim'
 Plug 'neomake/neomake'
 
 " Completion
-" Plug 'Valloric/YouCompleteMe'
-" Plug 'Shougo/neocomplete.vim'
-Plug 'maralla/completor.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Fast opening files
 Plug 'ctrlpvim/ctrlp.vim'
