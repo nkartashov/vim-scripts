@@ -31,14 +31,6 @@ Plug 'tpope/vim-rails'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Tagbar & tags for class view
-Plug 'majutsushi/tagbar'
-" Plug 'xolox/vim-misc'
-" Plug 'xolox/vim-easytags'
-
-" Tags for CoffeeScript
-Plug 'lukaszkorecki/CoffeeTags'
-
 " Git branches in Airline
 Plug 'tpope/vim-fugitive'
 
