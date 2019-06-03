@@ -70,7 +70,8 @@ Plug 'Shougo/vimproc.vim'
 Plug 'neomake/neomake'
 
 " Completion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 " Fast opening files
 Plug 'ctrlpvim/ctrlp.vim'
