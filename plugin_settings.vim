@@ -1,6 +1,6 @@
 " Plugin settings
 
-let g:python3_host_prog = '/Users/nkartashov/envs/python37-nvim/bin/python3'
+let g:python3_host_prog = $WORKON_HOME . '/python37-nvim/bin/python3'
 
 " Show Airline
 set laststatus=2
@@ -16,21 +16,22 @@ let g:airline_theme='solarized'
 " Just show the filename (no path) in the tab
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-
-call neomake#configure#automake('nw', 750)
-
 " Get type of the Haskell expression by ctrl-]
 autocmd FileType haskell nnoremap <buffer> <C-]> :GhcModType<CR>
 
 " Ctrl-P
 if executable('ag')
-  " Use Ag over Grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  " Use Ag and respect .gitignore
+  let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+    \ --ignore .git
+    \ --ignore .svn
+    \ --ignore .hg
+    \ --ignore .DS_Store
+    \ --ignore "**/*.pyc"
+    \ -g ""'
 
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " Don't cache
+  let g:ctrlp_use_caching = 0
 endif
 
 " Always open new files in a new tab using CtrlP
@@ -55,3 +56,20 @@ cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+" YouCompleteMe
+" Don't ask to load ycm_extra_conf.py
+let g:ycm_confirm_extra_conf = 0
+
+" Use clang instead of clangd lsp
+let g:ycm_use_clangd = 0
+
+" Close compeletion menu after use
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" GoTo on Ctrl-]
+nnoremap <C-]> :YcmCompleter GoTo<CR>
+
+" GoTo opens in a new tab if it's a different unopened file
+let g:ycm_goto_buffer_command = 'new-or-existing-tab'

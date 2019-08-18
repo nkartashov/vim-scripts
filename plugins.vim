@@ -66,12 +66,8 @@ Plug 'mhinz/vim-startify'
 " Async commands for completion plugins
 Plug 'Shougo/vimproc.vim'
 
-" Syntax checking
-Plug 'neomake/neomake'
-
 " Completion
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang' }
 
 " Fast opening files
 Plug 'ctrlpvim/ctrlp.vim'
