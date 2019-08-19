@@ -71,5 +71,14 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " GoTo on Ctrl-]
 nnoremap <C-]> :YcmCompleter GoTo<CR>
 
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+
 " GoTo opens in a new tab if it's a different unopened file
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
+
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<C-tab>'

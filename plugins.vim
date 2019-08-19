@@ -69,6 +69,11 @@ Plug 'Shougo/vimproc.vim'
 " Completion
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --system-libclang' }
 
+" Snippets
+Plug 'SirVer/ultisnips'
+" Snippets for different languages
+Plug 'honza/vim-snippets'
+
 " Fast opening files
 Plug 'ctrlpvim/ctrlp.vim'
 
