@@ -80,5 +80,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 " Searching with Ag
 Plug 'mileszs/ack.vim'
 
+" Python formatting using black
+Plug 'psf/black', { 'tag': '19.10b0' }
+
 " Initialize Plug system
 call plug#end()
+
+augroup autoformat_settings
+  autocmd BufWritePre *.py execute ':Black'
+augroup END
