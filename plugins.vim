@@ -83,9 +83,16 @@ Plug 'mileszs/ack.vim'
 " Python formatting using black
 Plug 'psf/black', { 'tag': '19.10b0' }
 
+" js formatting with prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'branch': 'release/0.x'
+  \ }
+
 " Initialize Plug system
 call plug#end()
 
 augroup autoformat_settings
   autocmd BufWritePre *.py execute ':Black'
+  autocmd BufWritePre *.js execute ':Prettier'
 augroup END
