@@ -1,6 +1,6 @@
 " Plugin settings
 
-let g:python3_host_prog = $WORKON_HOME . '/python37-nvim/bin/python3'
+let g:python3_host_prog = $WORKON_HOME . '/python3-nvim/bin/python3'
 
 " Show Airline
 set laststatus=2
