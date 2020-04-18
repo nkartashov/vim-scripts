@@ -30,6 +30,7 @@ Plug 'itchyny/vim-haskell-indent'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'posva/vim-vue'
+Plug 'leafgarland/typescript-vim'
 
 " GraphQL
 Plug 'jparise/vim-graphql'
@@ -94,5 +95,5 @@ call plug#end()
 
 augroup autoformat_settings
   autocmd BufWritePre *.py execute ':Black'
-  autocmd BufWritePre *.js execute ':Prettier'
+  autocmd BufWritePre *.js,*.ts,*.tsx  execute ':Prettier'
 augroup END
