@@ -109,6 +109,7 @@ xnoremap p "_dP
 
 " Delete the same way
 nnoremap d "_d
+nnoremap x "_x
 
 " Autocommands
 " Automatically delete whitespace character at the end of the string
